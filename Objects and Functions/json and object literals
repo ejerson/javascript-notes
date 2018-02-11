@@ -1,0 +1,20 @@
+
+JavaScript OBJECT
+var objectLiteral = {
+    firstname: 'Mary',
+    isAProgrammer: true
+}
+
+CONVERT JS OBJECT TO JSON
+// Use this to convert a JavaScript object into JSON format
+console.log(JSON.stringify(objectLiteral));
+
+JSON
+{
+    "firstname" : "Mary",
+    "isAProgrammer" : true
+}
+
+JSON to JavaScript OBJECT
+var jsonValue = JSON.parse('{ "firstname" : "Mary",
+"isAProgrammer" : true }')

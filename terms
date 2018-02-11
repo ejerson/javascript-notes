@@ -8,4 +8,4 @@ the relate to each other in memory.
 COERCION: converting a value from one type to another (casting)
   var a = 1 + "2"; // "12"
 
-  
+JSON: JavaScript Object Notation
