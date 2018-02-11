@@ -1,0 +1,21 @@
+FUNCTIONS ARE OBJECTS
+  FIRST CLASS FUNCTIONS: Everything you can do with other types
+  (object, strings, numbers) you can do with functions.
+  You can assign functions to variables, pass them around,
+  create them on the fly.
+
+  Functions are a special type of object. Doesn't have to have a name.
+  The code (invocable) that I write inside a function is just another
+  property that I'm adding on. A function can contain the following:
+    Primitive
+    Object
+    Function
+    NAME
+    CODE
+
+    function greet() {
+
+    }
+
+**** I can add properties to functions
+    greet.language = 'english';
