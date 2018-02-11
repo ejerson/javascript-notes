@@ -1,0 +1,14 @@
+ASYNCHRONOUS
+
+Rendering Engine
+
+JavaScript Engine (SYNCHRONOUS) | Has hooks to communicate with
+  other elements in the browser (rendering engine, http request)
+
+  Event Queue
+    events are placed on this queue (click events, http request)
+    * when the JS Engine has successfully processed all the
+    execution task in its execution stack, it will then look
+    at the event queue and process individual events 
+
+HTTP Request

@@ -1,0 +1,7 @@
+OPERATOR
+  A special function that is syntactically (written) differently
+  Operators take two parameters and return one result
+
+  JavaScript allows for infix notation
+
+Operators are functions the returns a values

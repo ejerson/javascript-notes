@@ -1,0 +1,24 @@
+Boolean(undefined); // false
+Boolean(null); // false
+Boolean(""); // false
+
+
+
+var a;
+
+if (a) {
+  console.log("Something is in a");
+}
+
+We can take advantage of coercion to check if a variable has
+a value. BUT if a = 0, this also evaluates to false, which is
+a problem.
+
+To work around this do the following:
+
+if (a || a === 0) {
+  console.log("Something is in a");
+}
+
+=== will be evaluated first which will equal to true,
+then 'a' will be coerced which will result in a false.

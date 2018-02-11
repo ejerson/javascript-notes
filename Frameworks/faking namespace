@@ -1,0 +1,19 @@
+NAMESPACE
+  A container for variables and functions.
+  JavaScript doesn't have namespace but we can fake it.
+
+  USING OBJECTS AS CONTAINERS to prevent name clashes.
+
+  var greet = 'Hello!';
+  var greet = 'Hola';
+
+  console.log(greet);
+
+  var english = {};
+  var spanish = {};
+
+  // It is important that I create an object before storing
+  // anything in it.
+  english.greetings = {};
+  english.greetings.greet = "Hello!";
+  spanish.greet = "Hola!";

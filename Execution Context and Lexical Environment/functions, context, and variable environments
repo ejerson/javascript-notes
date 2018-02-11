@@ -1,0 +1,4 @@
+VARIABLE ENVIRONMENTS | same named variables is okay, as long as the scope
+  doesn't conflict.
+  functions
+  global execution context

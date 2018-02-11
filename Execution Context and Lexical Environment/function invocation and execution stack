@@ -1,0 +1,13 @@
+1. Global Execution Context is Created
+    memory for functions are allocated
+2. When a function is called, an execution stack is created
+    Whichever one is on top is the one that is currently running
+
+    bFuncInsideA();
+    aFunc();
+    Global Execution Context
+
+3. Every time a function is invoked in javascript, a new execution
+    context is created and placed in the execution stack.
+    When a function finishes its execution context is popped from
+    the execution stack.

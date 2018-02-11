@@ -1,0 +1,20 @@
+DYNAMIC TYPING
+  var varB = "Yes";
+  Variables can hold different types of data because
+  its all figured out during execution, I don't need
+  to tell javascript the type of data I want to save
+  in a variable.
+
+  NO NEED TO FREAKING WORY ABOUT CASTING
+
+STATIC TYPING
+  int varA = 1;
+
+
+PRIMITIVE TYPES a data that represents a single value
+  undefined (don't use directly, let the engine deal with it)
+  null (use to indicate that something doesn't exist)
+  boolean (true false)
+  number (floating point number, decimal)
+  string
+  symbol (used in ES6)

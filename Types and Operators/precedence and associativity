@@ -1,0 +1,13 @@
+PRECEDENCE
+  which operator function gets called first
+
+ASSOCIATIVITY
+  what order operator function get called in:
+  left-to-right and right-to-left, when functions
+  have the same precedence
+
+USEFUL RESOURCE
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+
+=== || =

@@ -1,0 +1,32 @@
+console.log(1 < 2 < 3); // true
+console.log(true < 3); // false | true = 1;
+console.log(false < 1); // true | false = 0;
+
+console.log(3 < 2 < 1); // true
+  1. 3 < 2 = false
+  2. false < 1 = true;
+  left-to-right associativity
+
+NUMBER is a function.
+Number(false); // 0
+Number(undefined); // NaN
+Number(null); // null (doesn't coerce to 0 when using ==)
+
+Coercion is powerful but need to make sure that I am aware how
+it affects values.
+
+3 == 3 // true
+"3" == 3 // true
+"3" == 3 // false
+false == 0; // true
+null == 0; // false
+"" == 0; // true
+"" == false; // true
+
+USE strict equality to fix the issue of coercion (===)!
+=== if values are not of the same type, return false.
+
+"3" === 3 // false
+
+Object.is
+NaN 

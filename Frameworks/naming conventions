@@ -1,0 +1,22 @@
+framework and library | a grouping of JS code that performs a task
+and is intended to be reusable.
+
+FRAMEWORK
+  AngularJS
+  JQuery
+
+
+
+  <body>
+      <script src="lib1.js"></script>
+      <script src="lib1.js"></script>
+      <script src="app.js"></script>
+  </body>
+
+  window.libraryName = window.libraryName || "Lib 2";
+  // This ensures that naming clashes are minimized and prevented
+
+  javascript source files are loaded one at a time in the order
+  that they appear, it is essentially code that are stacked
+  on top of each other. So, naming conventions need to be different
+  to prevent conflict of variable names/values.

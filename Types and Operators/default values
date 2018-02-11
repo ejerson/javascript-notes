@@ -1,0 +1,27 @@
+
+
+
+function greet(name) {
+  console.log(name); // undefined
+  console.log('Hello ' + name); // Hello undefined
+}
+
+greet(); // The default value of variables are undefined.
+
+TO SET A DEFAULT VALUE do the following:
+
+function greet(name) {
+    name = name || '<Your name here>';
+    console.log('Hello ' + name);
+}
+
+greet();
+
+|| IF YOU PASS TWO VALUES THAT CAN BE COERCED TO TRUE,
+THE || FUNCTION WILL RETURN THE FIRST VALUE THE RETURNS A TRUE.
+NOT A BOOLEAN
+
+|| method returns the value that can be coerced to true:
+undefined || 'hello' // "hello"
+Boolean("hello"); // true
+"hi" || "hello" // "hi" (returns the first one)

@@ -1,0 +1,28 @@
+OBJECTS are collections of name value pair. They have reference
+  to the properties and methods sitting in memory.
+
+  Can have:
+    Primitives (property)
+    Object (property)
+    Function (a function is called method,
+      when it is connected to an object)
+
+OPERATOR
+  computed member access []
+  member access .
+
+  var person = new Object();
+  person["firstname"] = "Ejerson";
+  person["lastname"] = "Balabas";
+
+  var firstNameProperty = "firstname";
+
+  console.log(person); // Object
+  console.log(person[firstNameProperty]); // Ejerson
+  console.log(person.firstname); // Ejerson
+
+  // This creates a new object inside person
+  person.address = new Object();
+
+  // Use . operator to add properties to a sub-object
+  person.address.street = "111";

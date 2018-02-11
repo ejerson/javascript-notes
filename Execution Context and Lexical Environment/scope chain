@@ -1,0 +1,17 @@
+SCOPE CHAIN
+  if a variable is accessed inside a function
+  that is not declare inside that function, it will
+  use the variable residing inside the global
+  execution context's  variable environment.
+
+EVERY EXECUTION CONTEXT HAS A REFERENCE TO
+ITS OUTER ENVIRONMENT. So, the execution context
+of a function, if it is directly
+inside the global execution context,
+will have access to the global execution context.
+
+LET
+  using this keyword instead of var allows for
+  block scoping which prevents an outer environment
+  from having access to the variable environment of
+  a function.

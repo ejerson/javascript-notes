@@ -1,0 +1,32 @@
+LONG HAND OBJECT CREATION
+var person = new Object();
+
+OBJECT LITERAL
+  var person = {
+      firstname: 'Ejerson',
+      lastname: 'Balabas',
+      address: {
+          street: '111 Main St.',
+          city: 'New York',
+          state: 'NY'
+      }
+  };
+
+I CAN CREATE AN OBJECT ANYWHERE THAT I CAN CREATE A VARIABLE
+ON THE THE FLY.
+
+function greet(person) {
+  console.log('Hi ' + person.firstname);
+}
+
+greet(Ejerson); // Hi Ejerson
+
+I CAN PASS AN ANONYMOUS OBJECT INSIDE A FUNCTION INVOCATION
+  greet({
+      firstname: 'Mary',
+      lastname: 'Doe'
+  }); // Mary
+
+
+OBJECT LITERAL SYNTAX IS VERY POWERFUL AND CAN CREATE CLEAN
+AND EASY TO WRITE CODES.
