@@ -1,0 +1,27 @@
+SYNTAX PARSERS (JavaScript Engine does this.)
+  javascript code is processed by a syntax parser so a
+  computer can interpret it.
+
+
+AUTOMATIC SEMICOLON INSERTION
+  The syntax parser will automatically insert a
+  semicolon if none is provided, this will result
+  in bugs that are difficult to locate.
+  ALWAYS PROVIDE SEMICOLON!
+
+function getPerson() {
+
+  // NOT OK.
+  return
+  {
+      firstname: "John"
+  }
+
+  // THIS IS OK.
+  return {
+      firstname: "John"
+  }
+
+}
+
+console.log(getPerson()); // undefined

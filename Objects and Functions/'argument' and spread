@@ -1,0 +1,39 @@
+ARGUMENTS
+  'arguments' contains a list of all the values, parameters
+  that you pass to a function.
+
+function greet(firstname, lastname, language = 'en') {
+
+    if (arguments.length === 0) {
+        console.log("Missing parameters!");
+        // get out of a function.
+        return;
+    }
+
+    // I CAN USE DEFAULT PARAMETERS IF NOTHING IS PASSED
+    language = language || 'en';
+
+    console.log(firstname);
+    console.log(lastname);
+    console.log(language);
+
+    console.log(arguments); // array-like, gives all the
+    values passed to the function
+}
+
+greet(); // I can do this! I don't need to pass values to
+            function parameters
+
+greet("Richard"); // Richard, undefined, en
+
+
+
+SPREAD
+
+function greet(firstname, lastname, language, ...otherAraguments) {
+
+}
+
+// the rest of the value will be passed onto otherArguments as
+// an array
+greet("John", "Denver", "en", 1, 2,3);

@@ -1,0 +1,6 @@
+FUNCTION OVERLOADING doesn't exist in javascript.
+There are patter in javascript that makes this easier.
+
+Just create another method that would be used
+to call another method. It is a divide-and-conquer
+approach with javascript.
