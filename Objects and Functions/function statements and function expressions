@@ -1,1 +1,42 @@
-FUNCTION STATEMENTS AND FUNCTION EXPRESSIONS  
+FUNCTION STATEMENTS AND FUNCTION EXPRESSIONS
+  expression 1 + 2;
+
+
+= operator is a function that returns the value to its right side.
+
+
+
+FUNCTION STATEMENT
+  * Doesn't return a value until the function is executed
+  * It is hoisted, available ahead of time
+
+function greet() {
+  console.log("hi");
+}
+
+greet();
+
+FUNCTION EXPRESSION
+  * results in a value.
+  * not hoisted, therefore invoking it before it is declared
+    will cause an error.
+
+var anonymousGreet = function() {
+  console.log("hi");
+}
+
+anonymousGreet();
+
+I CAN CREATE FUNCTION ON THE FLY
+
+function log(a) {
+  a();
+}
+
+log(function() {
+  console.log("I am a function code.")
+});
+
+  * I can pass a function inside a function.
+  * I can invoke an anonymous function using a variable
+  

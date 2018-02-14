@@ -9,3 +9,10 @@ COERCION: converting a value from one type to another (casting)
   var a = 1 + "2"; // "12"
 
 JSON: JavaScript Object Notation
+
+EXPRESSION: A unit of code that results in a value.
+
+ANONYMOUS FUNCTION: can be referenced using a variable name.
+
+FUNCTIONAL PROGRAMMING:  Able to pass functions inside another
+  function.

@@ -1,0 +1,17 @@
+PRIMITIVE VALUE
+  var a = 3;
+  var b = a;
+
+  BY VALUE (all primitive types)
+  * b will be given a copy of a's value, it is located
+    in a new address dedicated to the value of b.
+
+
+OBJECT VALUE
+  var a = {};
+  var b = a;
+
+  BY REFERENCE ( all objects, including functions)
+  * b just points to the location of the object reference
+    b a
+  * no new object is created
