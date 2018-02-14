@@ -1,3 +1,12 @@
 CLOSURES
 
-  
+function greet(whattosay) {
+
+  return function(name) {
+      console.log(whattosay + " " + name);
+  }
+
+}
+
+// Calling a function inside a function
+greet("Hi")("Ejerson");
