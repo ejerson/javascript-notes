@@ -2,3 +2,4 @@ ALWAYS
 1. Provide my own semicolon.
 2. Place opening braces in the same line as its owner.
 3. insert an expression inside ().
+4. Use an IIFE to make sure namespace doesn't collide.
