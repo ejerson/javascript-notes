@@ -1,0 +1,24 @@
+An array is a collection. 0 based. I can put whatever type
+I want in a JavaScript array.
+
+var arr = new Array();
+var arr = [1, 2, 3];
+
+var variedArr = [
+    1,
+    false,
+    {
+        name: "Ejerson",
+        address: "123 Yay St."
+    },
+    function(name) {
+        var greeting = "Hello";
+        console.log(greeting + name);
+    },
+    "hello"
+];
+
+variedArr contains a number, boolean, object, function,
+and a string literal. THIS IS OKAY IN JavaScript.
+
+arr[3](arr[2].name); // invokes a function inside an array.
