@@ -1,0 +1,35 @@
+1. When a function expression is invoked, a new execution context is created
+2. Each execution context has its own variable environment
+3. Each execution context has access to its outer (lexical)
+   environment.
+4. Each execution context gives us the variable 'this'
+   * 'this' | Will point at a different object depending on
+              how a function is invoked.
+            | 'this' inside a function that is directly inside
+               the global object will still point to the global
+               object.
+
+console.log(this); // window object
+
+FUNCTION
+
+function a() {
+    console.log(this);
+    this.newVariable  "hello"; // 'this' attaches the newVariable
+                                  to the global object
+}
+
+a(); // window object, it still points to a global object
+
+
+METHOD
+
+var c = {
+  name: 'The c object',
+  log: function() {
+      console.log(this);
+  }
+}
+
+c.log(); // log method of the object c
+         // 'this' points to its enclosing object

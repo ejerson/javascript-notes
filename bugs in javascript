@@ -1,0 +1,38 @@
+var someObj = {
+  name: "someObj name",
+  print: function() {
+      this.name = "Updated someObj name";
+      console.log(this); // 'this' will point to someObj
+
+      var setName = function(newName) {
+          // BUG in JavaScript
+          this.name = newName; // 'this' points to the
+                                   GLOBAL OBJECT
+      }
+
+      setName("Updated someObj name again!");
+      console.log(this); // 'this' will point to someObj
+  }
+}
+
+// DO THE FOLLOWING TO DEAL WITH THIS BUG
+
+var someObj = {
+  name: "someObj name",
+  print: function() {
+      var self = this; // saves the reference to point to another
+                          variable.
+
+      self.name = "Updated someObj name";
+      console.log(self); // 'this' will point to someObj
+
+      var setName = function(newName) {
+          // BUG in JavaScript
+          self.name = newName; // 'this' points to the
+                                   GLOBAL OBJECT
+      }
+
+      setName("Updated someObj name again!");
+      console.log(self); // 'this' will point to someObj
+  }
+}
