@@ -1,0 +1,25 @@
+IMMEDIATELY INVOKED FUNCTIONS EXPRESSIONS (IIFE)S
+
+function greet(name) {
+    console.log("Hello " + name);
+}
+
+greet();
+
+
+USING A FUNCTION EXPRESSION
+var greetFunction = function(name) {
+    console.log("Hello" + name);
+};
+greetFunction("John");
+
+USING AN IMMEDIATELY INVOKED FUNCTION EXPRESSION (IIFE)
+var greetFunction = function(name) {
+    return "Hello" + name;
+}("John");
+
+
+TO INVOKE A FUNCTION STATEMENT WITHOUT A VARIABLE
+(function(name) {
+  return "Hello " + name;
+}("Yes"));

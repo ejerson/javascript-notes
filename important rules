@@ -1,2 +1,4 @@
-1. Always provide my own semicolon.
-2. Always place opening braces in the same line as its owner.
+ALWAYS
+1. Provide my own semicolon.
+2. Place opening braces in the same line as its owner.
+3. insert an expression inside ().
