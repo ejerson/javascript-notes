@@ -1,0 +1,9 @@
+const
+
+Variables declared with const must be assigned an
+initial value, but can’t be redeclared in the same scope,
+and can’t be reassigned.
+
+USE CASE
+use const when you don’t plan on reassigning
+new values to a variable.

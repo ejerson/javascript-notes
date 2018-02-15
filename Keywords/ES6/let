@@ -1,0 +1,12 @@
+let
+
+Variables declared with let can be reassigned, but can't
+be redeclared in the same scope.
+
+let instructor = 'James';
+instructor = 'Richard';
+console.log(instructor); // Richard
+
+
+USE CASE
+use let when you plan to reassign new values to a variable
