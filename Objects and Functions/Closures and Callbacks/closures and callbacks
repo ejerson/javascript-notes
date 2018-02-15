@@ -31,3 +31,7 @@ function tellMeWhenDone(callback) {
 tellMeWhenDone(function() {
     console.log("Executed inside tellMeWhenDone");
 });
+
+tellMeWhenDone(function() {
+    alert("I'm Done!");
+});
