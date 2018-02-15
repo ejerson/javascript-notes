@@ -16,3 +16,9 @@ ANONYMOUS FUNCTION: can be referenced using a variable name.
 
 FUNCTIONAL PROGRAMMING:  Able to pass functions inside another
   function.
+
+GARBAGE COLLECTION: When an execution context has finished, javascript
+  will eventually clear-out the memory.
+
+FREEE VARIABLES: Are variables that are outside a function that it
+  has access to.
