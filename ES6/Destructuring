@@ -1,0 +1,44 @@
+DESTRUCTURING to extract data from arrays and objects into
+  distinct variables.
+
+  * allows one to specify the elements for extraction
+  from an array or object on the left side of an
+  assignment
+
+  ARRAY
+  const numbers = [100, 200, 0];
+
+  // destructuring number array
+  const [a, b, c] = numbers;
+
+  OBJECT
+  const dog = {
+      breed: "pug",
+      color: "black",
+      name: "gus"
+
+      getName: function() {
+          return this.name;
+      }
+  }
+
+  const {breed, color, name, getName} = dog;
+
+NOTE: destructured objects or array method or function will
+no longer have access to the this variable from the original
+object.
+
+getName(); // undefined
+
+*********  NOT MINE
+const things = ['red', 'basketball', 'paperclip', 'green', 'computer', 'earth', 'udacity', 'blue', 'dogs'];
+
+const [one, sport, officeSupply, two, tool, mother, awesome, three, animal] = things;
+
+
+const colors = `List of Colors
+1. ${one}
+2. ${two}
+3. ${three}`;
+
+console.log(colors);
