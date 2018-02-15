@@ -22,3 +22,6 @@ GARBAGE COLLECTION: When an execution context has finished, javascript
 
 FREEE VARIABLES: Are variables that are outside a function that it
   has access to.
+
+CALLBACK FUNCTION: A function you give to another function, to be
+  run when the other function is finished.

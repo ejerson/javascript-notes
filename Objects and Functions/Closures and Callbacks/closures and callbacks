@@ -1,0 +1,33 @@
+CLOSURES AND CALLBACKS
+
+function sayHiLater() {
+
+    var greeting = "Hi!";
+
+    // setTimeout takes a function object and time
+    setTimeout(function() {
+
+        console.log(greeting);
+
+    }, 3000);
+}
+
+sayHiLater(); // waits 3000, prints Hi!
+
+
+// jQuery uses function expressions and first-class functions!
+$("button").click(function() {
+    // function to run when a click event happens
+});
+
+function tellMeWhenDone(callback) {
+
+    var a = 1000; // some work
+    var b = 2000; // some work
+
+    callback(); // the 'callback', it runs the function I give it!
+}
+
+tellMeWhenDone(function() {
+    console.log("Executed inside tellMeWhenDone");
+});
