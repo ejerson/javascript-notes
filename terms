@@ -25,3 +25,7 @@ FREEE VARIABLES: Are variables that are outside a function that it
 
 CALLBACK FUNCTION: A function you give to another function, to be
   run when the other function is finished.
+
+FUNCTION CURRYING: Creating a copy of a function but with
+  some preset parameters
+  (check: Objects and Functions/call(), apply(), bind()/call(), apply(), and bind())

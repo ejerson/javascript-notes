@@ -71,6 +71,6 @@ function multiply(a, b) {
 // (this, 2) sets the variable a permanently to 2
 var multipleByTwo = multiply.bind(this, 2);
 // (this, 2) sets the variable a permanently to 3 and b to 4
-var multipleByTwo = multiply.bind(this, 3, 4);
+var multipleByPermanently = multiply.bind(this, 3, 4);
 
 multiplyByTwo(4); // (a = 2, b = 4) = 8
