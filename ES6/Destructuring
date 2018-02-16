@@ -30,7 +30,7 @@ object.
 
 getName(); // undefined
 
-*********  NOT MINE
+
 const things = ['red', 'basketball', 'paperclip', 'green', 'computer', 'earth', 'udacity', 'blue', 'dogs'];
 
 const [one, sport, officeSupply, two, tool, mother, awesome, three, animal] = things;

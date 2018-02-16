@@ -1,0 +1,39 @@
+function getIndexToIns(arr, num) {
+
+arr.push(num);
+
+  // a function that is needed in order to sport
+  // numbers correctly, the sort method
+  // in javascript causes the numbers to be
+  // sorted according to a sting Unicode code points.
+
+  function compareNum(a, b) {
+    return a - b;
+  }
+
+  arr.sort(compareNum);
+
+  return arr.indexOf(num);
+}
+
+getIndexToIns([40, 60, 50], 50);
+
+
+********************  OR
+
+function getIndexToIns(arr, num) {
+
+arr.push(num);
+
+
+  // pass the sort method a function that will
+  // guarantee that each element in the array
+  // will be sorted in an ascending order.
+  arr.sort(function compareNum(a, b) {
+    return a - b;
+  });
+
+  return arr.indexOf(num);
+}
+
+getIndexToIns([40, 60, 50], 50);
