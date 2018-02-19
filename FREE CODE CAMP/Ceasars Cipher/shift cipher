@@ -8,6 +8,7 @@ EXAMPLES:
 function rot13(str) { // LBH QVQ VG!
 
   return str;
+
 }
 
 // Change the inputs below to test
@@ -19,5 +20,7 @@ rot13("SERR PBQR PNZC");
 
 
 METHODS USED
-  charCodeAt()
-  fromCharCode()
+  charCodeAt() - returns a number (UTF-16)
+    str.charCodeAt(index); // no need to split the string
+  fromCharCode() - returns the actual character
+    String.fromCharCode(num1[, ...[, numN]]);

@@ -1,0 +1,25 @@
+// https://www.youtube.com/watch?v=VRz0nbax0uI
+
+
+var StringOne = "I love candy ";
+var StringTow = "and coding!";
+
+a = 97
+A = 65
+z = 122
+Z = 90
+
+
+// charAt()
+console.log(stringOne.charAt(0)); // "I"
+
+// charCodeAt()
+console.log(stringOne.charCodeAt(0)); //  73
+
+// fromCharCode()
+console.log(String.fromCharCode(122)); // "z"
+
+// includes()
+console.log(stringTwo.includes("coding")); // true
+
+// repeat()
